@@ -30,7 +30,10 @@ const orderColorMap: Record<OrderStatus, string> = {
 export function OrderStatus({ status }: OrderStatusProps) {
   return (
     <div className="flex items-center gap-2">
-      <span className={twMerge('size-2 rounded-full', orderColorMap[status])} />
+      <span
+        data-testid="badge"
+        className={twMerge('size-2 rounded-full', orderColorMap[status])}
+      />
       <span>{orderStatusMap[status]}</span>
     </div>
   )
