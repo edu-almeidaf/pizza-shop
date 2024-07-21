@@ -2,7 +2,7 @@ import { http, HttpResponse } from 'msw'
 
 import { GetPopularProductsResponse } from '../get-popular-products'
 
-export const getPopularProductsMock = http.post<
+export const getPopularProductsMock = http.get<
   never,
   never,
   GetPopularProductsResponse

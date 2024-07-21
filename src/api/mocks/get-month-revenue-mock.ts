@@ -2,7 +2,7 @@ import { http, HttpResponse } from 'msw'
 
 import { GetMonthRevenueResponse } from '../get-month-revenue'
 
-export const getMonthRevenueMock = http.post<
+export const getMonthRevenueMock = http.get<
   never,
   never,
   GetMonthRevenueResponse

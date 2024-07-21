@@ -2,7 +2,7 @@ import { http, HttpResponse } from 'msw'
 
 import { GetDailyRevenueInPeriodResponse } from '../get-daily-revenue-in-period'
 
-export const getDailyRevenueInPeriodMock = http.post<
+export const getDailyRevenueInPeriodMock = http.get<
   never,
   never,
   GetDailyRevenueInPeriodResponse
